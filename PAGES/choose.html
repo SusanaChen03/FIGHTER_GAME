@@ -6,19 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose player</title>
     <link rel="stylesheet" href="../CSS/choose.css">
+    <script>
+        let botonseleccionadoj1;
+        function dimegamer (miobj){
+            debugger;
+            let button = miobj;
+
+            if(botonseleccionadoj1 !=undefined){
+
+                let ultimoboton = document.getElementById(botonseleccionadoj1);
+                ultimoboton.classList.remove("selected");
+            }
+       
+
+            botonseleccionadoj1=button.id;
+            button.classList.add("selected");
+                 
+            
+        
+        }
+
+    </script>
 </head>
 <body>
     <div class="select">
         <h1>Select player</h1>
     </div>
-    <div class="players">
+    <div id="div1" class="players">
         <h2>Player 1 </h2>
         <h2>Player 2 </h2>
     </div>
   
     <div class="choose">
-        // link iconos de jugadores 
+        <div class="o">
 
+        </div>
+        <div class="1">
+            < id="ryu1" src="../Images/Captura.PNG" alt=""  onclick="dimegamer(this);" >
+        </div> 
+        <div class="2">
+            <a id="ryu2" src="../Images/Captura.PNG" alt=""  onclick="dimegamer(this);" >
+        </div>
     </div>
 </body>
 </html>

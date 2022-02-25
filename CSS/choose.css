@@ -30,3 +30,12 @@ h2{
     grid-template-columns: repeat(9,200px);
     grid-template-rows: 200px ;
 }
+
+
+.azul{
+    border: 3px solid blue ;
+}
+.selected{
+    border: 3px solid red !important ;
+} 
+
