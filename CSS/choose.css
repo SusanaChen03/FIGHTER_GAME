@@ -25,17 +25,13 @@ h2{
     color: rgb(0, 0, 0);
 }
 
-.choose{
+.choosePlayer1{
     display: grid;
     grid-template-columns: repeat(9,200px);
     grid-template-rows: 200px ;
 }
 
-
-.azul{
-    border: 3px solid blue ;
-}
 .selected{
-    border: 3px solid red !important ;
+    border: 3px solid red;
 } 
 
