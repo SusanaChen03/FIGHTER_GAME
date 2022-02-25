@@ -25,9 +25,25 @@ h2{
     color: rgb(0, 0, 0);
 }
 
-.chooseP1{
-
+.contentall{
+    display: inline;
 }
+.selectp1{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.selectp2{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+
+
+
+
 
 .selected{
     border: 3px solid red;
