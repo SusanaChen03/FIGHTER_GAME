@@ -2,6 +2,9 @@ body{
     background-image: url("../Images/fondo\ japo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+
 }
 
 h1{
@@ -26,24 +29,30 @@ h2{
 }
 
 .contentall{
-    display: inline;
+    display: flex;
+ 
 }
 .selectp1{
+  
+    width: 40%;
     display: flex;
     flex-direction: row;
-    width: 50%;
+    justify-content: space-between;
+    margin-left:5em;
 }
 
 .selectp2{
+   
+    width: 40%;
     display: flex;
     flex-direction: row;
-    width: 50%;
+    justify-content: space-between;
+    margin-left:12em;
 }
 
-
-
-
-
+img{
+    width: 150px;
+}
 
 .selected{
     border: 3px solid red;

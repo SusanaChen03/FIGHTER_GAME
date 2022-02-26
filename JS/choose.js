@@ -1,4 +1,5 @@
 let botonseleccionadoj1 = ''
+
 function dimegamer (miobj){
     
     let button = miobj;
@@ -14,17 +15,18 @@ function dimegamer (miobj){
 }
 
 
-let botonseleccionadoj1 = ''
+let botonseleccionadoj2 = ''
+
 function dimegamer2 (miobj){
     
     let button = miobj;
 
-    if(botonseleccionadoj1 !=''){
+    if(botonseleccionadoj2 !=''){
 
-        let ultimoboton = document.getElementById(botonseleccionadoj1);
+        let ultimoboton = document.getElementById(botonseleccionadoj2);
         ultimoboton.classList.remove("selected");
     }
 
-    botonseleccionadoj1=button.id;
+    botonseleccionadoj2=button.id;
     button.classList.add("selected");
 }
