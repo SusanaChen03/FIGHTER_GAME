@@ -47,12 +47,6 @@ function restavidaoponente(jugador, valor){
 
 
 
-
-
-
-
-
-
 function ataquepatada (id){
 
     document.getElementById(id).src = imagenpatada();
@@ -60,15 +54,12 @@ function ataquepatada (id){
 }
     
 
-
-
 function imagenpatadajugador1 (){
     
     let v = "../Images/ryu/R patada.png";
 
     return v;
 } 
-
 
 
 function blood1 (id,vsize){
