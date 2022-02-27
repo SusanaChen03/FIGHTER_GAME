@@ -11,3 +11,36 @@ body{
     z-index: -2;
 }
 
+header{
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bloodleft, .bloodright{
+
+    width: 30%;
+    height: 30px;
+    background-color: blue;
+}
+
+.vs{
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+}
+
+.content{
+    display: flex;
+    height: 44em;
+}
+.contentleft{
+    border: 2px solid green;
+    width: 50%;
+
+}
+
+.contentright{
+    border: 2px solid yellow;
+    width: 50%;
+
+}
