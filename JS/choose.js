@@ -1,4 +1,4 @@
-let botonseleccionadoj1 = ''
+let botonseleccionadoj1 = '';
 
 function dimegamer (miobj){
     
@@ -15,7 +15,7 @@ function dimegamer (miobj){
 }
 
 
-let botonseleccionadoj2 = ''
+let botonseleccionadoj2 = '';
 
 function dimegamer2 (miobj){
     
