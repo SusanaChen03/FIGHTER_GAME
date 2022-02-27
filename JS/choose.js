@@ -12,6 +12,11 @@ function dimegamer (miobj){
 
     botonseleccionadoj1=button.id;
     button.classList.add("selected");
+
+    if (botonseleccionadoj1 !='' && botonseleccionadoj2!=''){
+
+        document.getElementById('start').style = 'display:flex';
+    }
 }
 
 
@@ -29,4 +34,10 @@ function dimegamer2 (miobj){
 
     botonseleccionadoj2=button.id;
     button.classList.add("selected");
+
+    if (botonseleccionadoj1 !='' && botonseleccionadoj2!=''){
+
+        document.getElementById('start').style = 'display:flex';
+    }
 }
+
