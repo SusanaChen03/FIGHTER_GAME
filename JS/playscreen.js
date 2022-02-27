@@ -28,7 +28,9 @@ function restavidaoponente(jugador, valor){
     
     if (jugador == "player1"){
         lifeplayer2 = lifeplayer2 - valor;
-    
+        if (lifeplayer2 > 0){
+            lifeplayer2 = 0;
+        }
         document.getElementById("bv2").style="width: " + lifeplayer2 +"px;";
         
         
@@ -37,7 +39,10 @@ function restavidaoponente(jugador, valor){
     if (jugador == "player2"){
         document.getElementById("bv1").style="width: " + valor +"px;";
         lifeplayer1 = lifeplayer1 - valor;
-    }
+        if (lifeplayer1 > 0){
+            lifeplayer1 = 0;
+        }
+        }
     }
 
 
