@@ -6,47 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose player</title>
     <link rel="stylesheet" href="../CSS/choose.css">
-    <script>
-        let botonseleccionadoj1;
-        function dimegamer (miobj){
-            debugger;
-            let button = miobj;
-
-            if(botonseleccionadoj1 !=undefined){
-
-                let ultimoboton = document.getElementById(botonseleccionadoj1);
-                ultimoboton.classList.remove("selected");
-            }
-       
-
-            botonseleccionadoj1=button.id;
-            button.classList.add("selected");
-                 
-            
-        
-        }
-
-    </script>
+    <script src="../JS/choose.js"></script>
 </head>
 <body>
-    <div class="select">
-        <h1>Select player</h1>
-    </div>
-    <div id="div1" class="players">
+    
+    <h1>Select player</h1>
+    
+    <div class="players">
         <h2>Player 1 </h2>
         <h2>Player 2 </h2>
     </div>
-  
-    <div class="choose">
-        <div class="o">
+    
+    <div class="contentall">       
 
+        <div class="selectp1">
+        
+            <div>
+                <img id="honda1" src="../Images/H icon .jpg" alt="" onclick="dimegamer(this);">
+            </div>
+            <div>
+                <img id="chunli1" src="../Images/C icon.jpg" alt=""  onclick="dimegamer(this);">
+            </div>
+            <div>
+                <img id="ken1" src="../Images/K icon.jpg" alt=""  onclick="dimegamer(this);" >
+            </div>
+            <div>
+                <img id="ryu1" src="../Images/R icon.jpg" alt=""  onclick="dimegamer(this);" >
+            </div> 
         </div>
-        <div class="1">
-            <a id="ryu1" src="../Images/Captura.PNG" alt=""  onclick="dimegamer(this);" >
-        </div> 
-        <div class="2">
-            <a id="ryu2" src="../Images/Captura.PNG" alt=""  onclick="dimegamer(this);" >
+
+        <div class="selectp2">
+            <div>
+                <img id="ryu2" src="../Images/R icon izq .jpg" alt=""  onclick="dimegamer2(this);" >
+            </div> 
+            <div>
+                <img id="ken2" src="../Images/K icon izq.jpg" alt=""  onclick="dimegamer2(this);" >
+            </div>
+            <div>
+                <img id="chunli2" src="../Images/C icon izq.jpg" alt=""  onclick="dimegamer2(this);">
+            </div>
+            <div>
+                <img id="honda2" src="../Images/H icon izq.jpg" alt="" onclick="dimegamer2(this);">
+            </div>
         </div>
     </div>
+
+    
+    <div class="start">
+
+        <a>PRESS START! !</a>
+
+    </div>
+
+    
 </body>
 </html>
