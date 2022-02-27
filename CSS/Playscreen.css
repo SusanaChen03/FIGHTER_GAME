@@ -3,7 +3,7 @@
 }
 
 body{
-    background-image: url("../Images/campobatallaestatic.jpg");
+    background-image: url("../Images/background\ images/campobatallaestatic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -16,8 +16,14 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
-.bloodleft, .bloodright{
 
+.p1, .p2{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bloodleft, .bloodright{
     width: 30%;
     height: 30px;
     background-color: blue;
@@ -26,21 +32,17 @@ header{
 .vs{
     font-size: 50px;
     font-weight: bold;
-    color: red;
+    color: yellow;
 }
 
 .content{
     display: flex;
     height: 44em;
+    justify-content: center;
+    align-items: flex-end;
 }
-.contentleft{
+
+.contentleft, .contentright{
     border: 2px solid green;
     width: 50%;
-
-}
-
-.contentright{
-    border: 2px solid yellow;
-    width: 50%;
-
 }
