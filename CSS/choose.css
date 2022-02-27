@@ -1,3 +1,7 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body{
     background-image: url("../Images/fondo\ japo.jpg");
     background-repeat: no-repeat;
@@ -9,7 +13,6 @@ body{
 
 h1{
     font-size: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(42, 14, 201);
     display: flex;
     justify-content: flex-end;
@@ -24,14 +27,13 @@ h1{
 
 h2{
     font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(0, 0, 0);
 }
 
 .contentall{
     display: flex;
- 
 }
+
 .selectp1{
   
     width: 40%;
@@ -58,3 +60,19 @@ img{
     border: 3px solid red;
 } 
 
+.start{
+    height: 360px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: yellow;
+}
