@@ -62,7 +62,8 @@ img{
 
 .start{
     height: 360px;
-    display:flex;
+
+    display:none;
     justify-content: center;
     align-items: center;
 }
