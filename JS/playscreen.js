@@ -3,6 +3,28 @@ let tipojugador2="honda";//ryu,honda,chunli,ken
 
 
 
+function punetazo(){
+
+    document.getElementById("player1").src="../Images/ryu/ryu.gif";
+
+    const volver =()=> document.getElementById("player1").src="../Images/ryu/R en guardia.png"
+    
+    setTimeout (volver,2000)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function ataquepatada (id){
 
     document.getElementById(id).src = imagenpatada();
