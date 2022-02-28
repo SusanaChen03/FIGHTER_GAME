@@ -1,21 +1,21 @@
-let tipojugador1="ryu";
-let tipojugador2="honda";//ryu,honda,chunli,ken
+let tipeplayer1="ryu"; //ryu, honda, chunli, ken
+let tipeplayer2="honda";//ryu,honda,chunli,ken
 
 let lifeplayer1 = 100;
 let lifeplayer2 = 100;
 
-function punetazo(){
+function punch(){
 
     document.getElementById("player1").src="../Images/ryu/ryu.gif";
     
     let valor = 60;
-    restavidaoponente("player1", valor);
+    restliveoponente("player1", valor);
 
-    setTimeout (volver,2000);
+    setTimeout (back,2000);
 }
    
 
-function volver (){ 
+function back (){ 
         document.getElementById("player1").src="../Images/ryu/R en guardia.png";
 
         if ( lifeplayer2 <= 0){
@@ -24,9 +24,9 @@ function volver (){
         
 }
 
-function restavidaoponente(jugador, valor){
+function restliveoponente(player, valor){
     
-    if (jugador == "player1"){
+    if (player == "player1"){
         lifeplayer2 = lifeplayer2 - valor;
         if (lifeplayer2 > 0){
             lifeplayer2 = 0;
@@ -36,7 +36,7 @@ function restavidaoponente(jugador, valor){
         
     }
 
-    if (jugador == "player2"){
+    if (player == "player2"){
         document.getElementById("bv1").style="width: " + valor +"px;";
         lifeplayer1 = lifeplayer1 - valor;
         if (lifeplayer1 > 0){
