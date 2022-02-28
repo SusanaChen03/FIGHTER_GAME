@@ -9,7 +9,7 @@ function punch(){
     document.getElementById("player1").src="../Images/ryu/ryu.gif";
     
     let valor = 60;
-    restliveoponente("player1", valor);
+    restliveoponent("player1", valor);
 
     setTimeout (back,2000);
 }
@@ -24,7 +24,7 @@ function back (){
         
 }
 
-function restliveoponente(player, valor){
+function restliveoponent(player, valor){
     
     if (player == "player1"){
         lifeplayer2 = lifeplayer2 - valor;
