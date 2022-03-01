@@ -14,12 +14,19 @@ Es un juego para dos jugadores de una sola ronda, cada jugador podrá elegir ent
 
 Entonces, A JUGAR!!!!!!
 
-### Stack Tecnológico👍
+### Construido con :👍
 
 ---
 
-Todo el juego esta hecho con las tecnologías siguientes:
+El Stack tecnológico de este juego han sido:
 
-<img src="../Images/readme images/html5css3js">
 
-<img> <img>
+
+### Contribuyendo 👀️ 
+
+---
+
+Por favor lee el CONTRIBUYING.md para detalles de mi código de conducta, y el proceso para enviarme pull requests.
+
+
+Hecho con mucho ❤️ por SusanaChen 😄
