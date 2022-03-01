@@ -22,6 +22,7 @@ function back (){
             alert("jugador 1 has ganado");
         }
         
+    
 }
 
 function restliveoponent(player, valor){
