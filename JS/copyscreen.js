@@ -1,42 +1,77 @@
-let tipeplayer1="ryu1"; //ryu, honda, chunli, ken
-let tipeplayer2="honda2";//ryu,honda,chunli,ken
+let tipeplayer1= 0; //0ryu, 1honda, 2chunli, 3ken
+let tipeplayer2= 0;//0ryu,1honda,2chunli,3ken
 
 let lifeplayer1 = 100;
 let lifeplayer2 = 100;
 
+let timer=300;
+
+const arrayPunch = ["../Images/ryu/ryu.gif","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
+const arraykick = ["../Images/ryu/R patada.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
+const arrayEspecial = ["../Images/ryu/R en guardia.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
+const arrayBack = ["../Images/ryu/R patada.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
+
+
+function init(){
+    document.getElementById("player1").src = arrayBack[tipeplayer1];
+    document.getElementById("player2").src = arrayBack[tipeplayer2];
+}
+ 
+
+let turn = "player1"; //player1, player2
+
+
 function punch(){
 
-    if(tipeplayer1 === "ryu1"){ 
-    document.getElementById("player1").src="../Images/ryu/ryu.gif";
-
-    if(tipeplayer1 === "ken1"){
-        document.getElementById("player1").src="../Images/ken/K manos dfre.png"
-    }
-    if(tipeplayer1 === "chunli1"){
-        document.getElementById("player1").src="../Images/chunLi/C ataque mano.png"
-    }
-
-    if(tipeplayer1 === "honda1"){
-        document.getElementById("player1").src="../Images/honda/Honda ataque.png"
-    }
-
-        let valor = 60;
+    if(turn=="player1"){
+    
+        document.getElementById("player1").src= arrayPunch[tipeplayer1];
+   
+        let valor = 20;
         restliveoponent("player1", valor);
 
-        setTimeout (back,2000);
+        setTimeout (back,timer);
     }
+
 }
    
 
 function back (){ 
 
-    if(tipeplayer1 === "ryu1"){
-    document.getElementById("player1").src="../Images/ryu/R en guardia.png";
+    document.getElementById("player1").src= arrayBack[tipeplayer1];
 
+    if ( lifeplayer2 <= 0){
+        alert("jugador 1 has ganado");
+    }
 
-        if ( lifeplayer2 <= 0){
-            alert("jugador 1 has ganado");
-        }
+    turn ="player2";
+}
+
+function kick (){
+
+    if(turn=="player1")
+    {
+
+    document.getElementById("player1").src= arraykick[tipeplayer1];
+    
+    let valor = 30;
+        restliveoponent("player1", valor);
+
+        setTimeout (back,timer);
+    }
+}
+    
+
+function especial (){
+
+    if(turn=="player1"){
+
+    document.getElementById("player1").src= arrayEspecial[tipeplayer1];
+    
+    let valor = 50;
+        restliveoponent("player1", valor);
+
+        setTimeout (back,timer);
     }
 }
 
@@ -45,43 +80,76 @@ function restliveoponent(player, valor){
     
     if (player == "player1"){
         lifeplayer2 = lifeplayer2 - valor;
-        if (lifeplayer2 > 0){
+        if (lifeplayer2 < 0){
             lifeplayer2 = 0;
         }
         document.getElementById("bv2").style="width: " + lifeplayer2 +"px;";
         
-        
     }
 
     if (player == "player2"){
-        document.getElementById("bv1").style="width: " + valor +"px;";
+        
         lifeplayer1 = lifeplayer1 - valor;
-        if (lifeplayer1 > 0){
+        if (lifeplayer1 < 0){
             lifeplayer1 = 0;
+        
         }
-        }
+        document.getElementById("bv1").style="width: " + lifeplayer1 +"px;";
     }
-
-
-
-function ataquepatada (id){
-
-    document.getElementById(id).src = imagenpatada();
-    
 }
     
 
-function imagenpatadajugador1 (){
+
+
+
+function punch2(){
+    if(turn=="player2"){
     
-    let v = "../Images/ryu/R patada.png";
+    document.getElementById("player2").src= arrayPunch[tipeplayer2];
+   
+        let valor = 20;
+        restliveoponent("player2", valor);
 
-    return v;
-} 
+        setTimeout (back2,timer);
+    }
+    
+}
+   
 
+function back2 (){ 
+    if(turn=="player2"){
 
-function blood1 (id,vsize){
+    document.getElementById("player2").src= arrayBack[tipeplayer2];
 
-    document.getElementById(id).style="width:" + vsize +"px;";
+    if ( lifeplayer1 <= 0){
+        alert("jugador 2 has ganado");
+    }
+        turn = "player1";
+    }   
+}
+
+function kick2 (){
+    if(turn=="player2"){
+
+    document.getElementById("player2").src= arraykick[tipeplayer2];
+    
+    let valor = 30;
+        restliveoponent("player2", valor);
+
+        setTimeout (back2,timer);
+}
+}
+
+function especial2 (){
+    if(turn=="player2"){
+
+    document.getElementById("player2").src= arrayEspecial[tipeplayer2];
+    
+    let valor = 50;
+        restliveoponent("player2", valor);
+
+        setTimeout (back2,timer);
 
 }
- 
+
+}
