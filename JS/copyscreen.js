@@ -1,14 +1,14 @@
 let tipeplayer1= 0; //0ryu, 1honda, 2chunli, 3ken
 let tipeplayer2= 0;//0ryu,1honda,2chunli,3ken
 
-let lifeplayer1 = 100;
-let lifeplayer2 = 100;
+let lifeplayer1 = 150;
+let lifeplayer2 = 150;
 
 let timer=300;
 
 const arrayPunch = ["../Images/ryu/ryu.gif","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
 const arraykick = ["../Images/ryu/R patada.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
-const arrayEspecial = ["../Images/ryu/R en guardia.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
+const arraySpecial = ["../Images/ryu/R en guardia.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
 const arrayBack = ["../Images/ryu/R patada.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
 
 
@@ -27,7 +27,7 @@ function punch(){
     
         document.getElementById("player1").src= arrayPunch[tipeplayer1];
    
-        let valor = 20;
+        let valor = 30;
         restliveoponent("player1", valor);
 
         setTimeout (back,timer);
@@ -49,12 +49,12 @@ function back (){
 
 function kick (){
 
-    if(turn=="player1")
-    {
+    if(turn=="player1"){
+    
 
     document.getElementById("player1").src= arraykick[tipeplayer1];
     
-    let valor = 30;
+    let valor = 40;
         restliveoponent("player1", valor);
 
         setTimeout (back,timer);
@@ -66,7 +66,7 @@ function especial (){
 
     if(turn=="player1"){
 
-    document.getElementById("player1").src= arrayEspecial[tipeplayer1];
+    document.getElementById("player1").src= arraySpecial[tipeplayer1];
     
     let valor = 50;
         restliveoponent("player1", valor);
@@ -74,6 +74,8 @@ function especial (){
         setTimeout (back,timer);
     }
 }
+
+
 
 
 function restliveoponent(player, valor){
@@ -101,13 +103,12 @@ function restliveoponent(player, valor){
 
 
 
-
 function punch2(){
     if(turn=="player2"){
     
     document.getElementById("player2").src= arrayPunch[tipeplayer2];
    
-        let valor = 20;
+        let valor = 40;
         restliveoponent("player2", valor);
 
         setTimeout (back2,timer);
@@ -133,7 +134,7 @@ function kick2 (){
 
     document.getElementById("player2").src= arraykick[tipeplayer2];
     
-    let valor = 30;
+    let valor = 50;
         restliveoponent("player2", valor);
 
         setTimeout (back2,timer);
@@ -143,9 +144,9 @@ function kick2 (){
 function especial2 (){
     if(turn=="player2"){
 
-    document.getElementById("player2").src= arrayEspecial[tipeplayer2];
+    document.getElementById("player2").src= arraySpecial[tipeplayer2];
     
-    let valor = 50;
+    let valor = 60;
         restliveoponent("player2", valor);
 
         setTimeout (back2,timer);

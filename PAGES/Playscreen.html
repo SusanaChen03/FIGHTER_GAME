@@ -6,47 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play screen</title>
     <link rel="stylesheet" href="../CSS/Playscreen.css">
-   <!--<script src="../JS/playscreen.js"></script>-->
    <script src="../JS/copyscreen.js"></script>
 </head>
 <body onload="init()">
+
     <header>
         <div class="p1">Player 1</div>
-        <div id="bv1" style="width: 100px;"  class="bloodleft"> </div>
+        <div id="bv1" style="width: 350px;"  class="bloodleft"> </div>
         <div class="vs">VS</div>
-        <div id="bv2" style="width: 100px;"  class="bloodright"> </div>
+        <div id="bv2" style="width: 350px;"  class="bloodright"> </div>
         <div class="p2">Player 2</div>
     </header>
     
     <div class="content">
-
         <div class="contentleft">      
             <img id="player1" src="" alt="">     
         </div>
-        
-
         <div class="contentright">
             <img id="player2" src="" alt="">
         </div>
-
     </div>
-    <div class="contentfooter">
 
+    <div class="contentfooter">
         <div class="contentleft">      
             <button onclick= "punch(this);">Ataque puñetazo</button>
             <button onclick= "kick (this);">Ataque patada</button>
             <button onclick= "especial (this);">Ataque especial</button>   
         </div>
-        
-
         <div class="contentright">
             <button onclick= "punch2(this);">Ataque puñetazo</button>
-        <button onclick= "kick2(this);">Ataque patada</button>
-        <button onclick= "especial2(this);">Ataque especial</button>
+            <button onclick= "kick2(this);">Ataque patada</button>
+            <button onclick= "especial2(this);">Ataque especial</button>
         </div>
-
     </div>
      
-
 </body>
 </html>
