@@ -20,13 +20,14 @@ Entonces, A JUGAR!!!!!!
 
 El Stack tecnológico de este juego han sido:
 
+![](Images/readmeimages/html5css3js)
 
 
-### Contribuyendo 👀️ 
+
+Contribuyendo 👀️
 
 ---
 
 Por favor lee el CONTRIBUYING.md para detalles de mi código de conducta, y el proceso para enviarme pull requests.
-
 
 Hecho con mucho ❤️ por SusanaChen 😄
