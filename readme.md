@@ -20,7 +20,7 @@ Entonces, A JUGAR!!!!!!
 
 El Stack tecnológico de este juego han sido:
 
-![](Images/readmeimages/html5css3js)
+![imagen](Images/readmeimages/html5css3js.png)
 
 
 
