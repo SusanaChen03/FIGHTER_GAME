@@ -6,17 +6,18 @@ let lifeplayer2 = 150;
 
 let timer=300;
 
-const arrayPunch = ["../Images/ryu/ryu.gif","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
-const arraykick = ["../Images/ryu/R patada.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
-const arraySpecial = ["../Images/ryu/R en guardia.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
-const arrayBack = ["../Images/ryu/R patada.png","../Images/honda/Honda ataque.png","../Images/chunLi/C ataque mano.png","../Images/ken/K manos dfre.png"];
+const arrayPunch = ["../Images/ryu/ryu puñetazo izquierda.png","../Images/honda/Honda puñetazo izquierdo.png","../Images/chunLi/Chun puñetazo izquierdo.png","../Images/ken/ken.png"];
+const arraykick = ["../Images/ryu/Ryu patada izquierda.png","../Images/honda/Honda patada izquierdo.png","../Images/chunLi/Chun patada izquierda.png","../Images/ken/ken patada izquierda.png"];
+const arraySpecial = ["../Images/ryu/Ryu especial izquierda.png","../Images/honda/Honda especial izquierdo.png","../Images/chunLi/Chun especial izquierdo.png","../Images/ken/Ken especial izquierdo.png"];
+const arrayBack = ["../Images/ryu/ryu inicio izquierda.png","../Images/honda/Honda inicio izquierdo.png","../Images/chunLi/Chun inicio izquierda.png","../Images/ken/ken inicio izquierda.png"];
 
 
 function init(){
     document.getElementById("player1").src = arrayBack[tipeplayer1];
-    document.getElementById("player2").src = arrayBack[tipeplayer2];
+    document.getElementById("player2").src = arrayBack2[tipeplayer2];
 }
  
+
 
 let turn = "player1"; //player1, player2
 
@@ -101,12 +102,17 @@ function restliveoponent(player, valor){
 }
     
 
+const arrayPunch2 = ["../Images/ryu/ryu puñetazo derecha.png","../Images/honda/Honda punetazo derecho.png","../Images/chunLi/Chun puñetazo derecho.png","../Images/ken/ken puño derecha.png"];
+const arraykick2 = ["../Images/ryu/Ryu patada derecha.png","../Images/honda/Honda patada derecho .png","../Images/chunLi/Chun patada derecha.png","../Images/ken/ken patada derecha.png"];
+const arraySpecial2 = ["../Images/ryu/Ryu especial derecha.png","../Images/honda/Honda especial derecho.png","../Images/chunLi/Chun especial derecho.png","../Images/ken/Ken especial derecho.png"];
+const arrayBack2 = ["../Images/ryu/ryu inicio derecha.png","../Images/honda/Honda inicio derecho .png","../Images/chunLi/Chun inicio derecha .png","../Images/ken/ken inicio derecha .png"];
+
 
 
 function punch2(){
     if(turn=="player2"){
     
-    document.getElementById("player2").src= arrayPunch[tipeplayer2];
+    document.getElementById("player2").src= arrayPunch2[tipeplayer2];
    
         let valor = 40;
         restliveoponent("player2", valor);
@@ -120,7 +126,7 @@ function punch2(){
 function back2 (){ 
     if(turn=="player2"){
 
-    document.getElementById("player2").src= arrayBack[tipeplayer2];
+    document.getElementById("player2").src= arrayBack2[tipeplayer2];
 
     if ( lifeplayer1 <= 0){
         alert("jugador 2 has ganado");
@@ -132,7 +138,7 @@ function back2 (){
 function kick2 (){
     if(turn=="player2"){
 
-    document.getElementById("player2").src= arraykick[tipeplayer2];
+    document.getElementById("player2").src= arraykick2[tipeplayer2];
     
     let valor = 50;
         restliveoponent("player2", valor);
@@ -144,7 +150,7 @@ function kick2 (){
 function especial2 (){
     if(turn=="player2"){
 
-    document.getElementById("player2").src= arraySpecial[tipeplayer2];
+    document.getElementById("player2").src= arraySpecial2[tipeplayer2];
     
     let valor = 60;
         restliveoponent("player2", valor);
