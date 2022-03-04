@@ -42,7 +42,9 @@ function back (){
     document.getElementById("player1").src= arrayBack[tipeplayer1];
 
     if ( lifeplayer2 <= 0){
-        alert("jugador 1 has ganado");
+        document.getElementById("winner").innerText ="PLAYER 1 WIN";
+        document.getElementById("winner").style= "display:block";
+        document.getElementById("playagain").style= "display:block";
     }
 
     turn ="player2";
@@ -86,7 +88,7 @@ function restliveoponent(player, valor){
         if (lifeplayer2 < 0){
             lifeplayer2 = 0;
         }
-        document.getElementById("bv2").style="width: " + lifeplayer2 +"px;";
+        document.getElementById("bv2").style="margin-top:-30px;width: " + lifeplayer2 +"px;";
         
     }
 
@@ -97,7 +99,7 @@ function restliveoponent(player, valor){
             lifeplayer1 = 0;
         
         }
-        document.getElementById("bv1").style="width: " + lifeplayer1 +"px;";
+        document.getElementById("bv1").style="margin-top:-30px;width: " + lifeplayer1 +"px;";
     }
 }
     
@@ -129,7 +131,9 @@ function back2 (){
     document.getElementById("player2").src= arrayBack2[tipeplayer2];
 
     if ( lifeplayer1 <= 0){
-        alert("jugador 2 has ganado");
+        document.getElementById("winner").innerText ="PLAYER 2 WIN";
+        document.getElementById("winner").style= "display:block";
+        document.getElementById("playagain").style= "display:block";
     }
         turn = "player1";
     }   

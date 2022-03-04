@@ -14,13 +14,16 @@
         <div class="p1">Player 1</div>
 
         <div class="bloodBarBack">
-            <div id="bv1" style="width: 350px;"  class="bloodleft"> </div>
+           
+            <div style="width: 350px;  height: 30px; background-color: blue;" > </div>
+            <div id="bv1" style="width: 350px; margin-top:-30px;"  class="bloodleft"> </div>
         </div>
 
         <div class="vs">VS</div>
 
         <div class="bloodBarBack">
-        <div id="bv2" style="width: 350px;"  class="bloodright"> </div>
+            <div style="width: 350px;  height: 30px; background-color: blue;" > </div>
+        <div id="bv2" style="width: 350px; margin-top:-30px;"  class="bloodright"> </div>
         </div>
 
         
@@ -28,12 +31,15 @@
     
     </header>
     
+        <div class="winnerbox">   <p id="winner" style="display:none;">YOU WIN</p>  </div>
+        <div class="playagainbox"><a href="choose.html" id="playagain" style="display:none;">Play Again </a> </div>       
+
     <div class="content">
         <div class="contentleft">      
-            <img id="player1" src="" alt="">     
+            <img class="imageplayer" id="player1" src="" alt="">     
         </div>
         <div class="contentright">
-            <img id="player2" src="" alt="">
+            <img class="imageplayer" id="player2" src="" alt="">
         </div>
     </div>
 

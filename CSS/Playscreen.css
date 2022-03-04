@@ -24,9 +24,9 @@ header{
 }
 
 .bloodleft, .bloodright{
-    width: 100px;
+    width: 300px;
     height: 30px;
-    background-color: blue;
+    background-color: green;
 }
 
 .vs{
@@ -54,4 +54,29 @@ header{
     
 }
 
+.imageplayer{
+    height: 270px;
+}
 
+.winnerbox{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+}
+
+.playagainbox{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+a:link{
+    text-decoration: none;
+    color:red;
+}
+a:hover{
+    color:red;
+}
