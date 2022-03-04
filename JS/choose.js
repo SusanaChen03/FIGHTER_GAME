@@ -1,8 +1,11 @@
 let botonseleccionadoj1 = '';
+let numberplayer1 = 0;
 
-function dimegamer (miobj){
+function dimegamer (miobj,number){
     
     let button = miobj;
+
+    numberplayer1 = number;
 
     if(botonseleccionadoj1 !=''){
 
@@ -21,10 +24,12 @@ function dimegamer (miobj){
 
 
 let botonseleccionadoj2 = '';
+let numberplayer2 = 0;
 
-function dimegamer2 (miobj){
+function dimegamer2 (miobj, number){
     
     let button = miobj;
+    numberplayer2 = number;
 
     if(botonseleccionadoj2 !=''){
 
@@ -41,3 +46,6 @@ function dimegamer2 (miobj){
     }
 }
 
+startgame = ()=>{
+  window.open('playscreen.html?jugador1='+numberplayer1+'&jugador2='+numberplayer2);
+};

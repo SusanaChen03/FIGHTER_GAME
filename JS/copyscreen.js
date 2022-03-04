@@ -10,8 +10,12 @@ const arrayPunch = ["../Images/ryu/ryu puñetazo izquierda.png","../Images/honda
 const arraykick = ["../Images/ryu/Ryu patada izquierda.png","../Images/honda/Honda patada izquierdo.png","../Images/chunLi/Chun patada izquierda.png","../Images/ken/ken patada izquierda.png"];
 const arraySpecial = ["../Images/ryu/Ryu especial izquierda.png","../Images/honda/Honda especial izquierdo.png","../Images/chunLi/Chun especial izquierdo.png","../Images/ken/Ken especial izquierdo.png"];
 const arrayBack = ["../Images/ryu/ryu inicio izquierda.png","../Images/honda/Honda inicio izquierdo.png","../Images/chunLi/Chun inicio izquierda.png","../Images/ken/ken inicio izquierda.png"];
-
-
+debugger;
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+tipeplayer1=Number(params.jugador1);
+tipeplayer2=Number(params.jugador2);
+debugger;
 function init(){
     document.getElementById("player1").src = arrayBack[tipeplayer1];
     document.getElementById("player2").src = arrayBack2[tipeplayer2];
