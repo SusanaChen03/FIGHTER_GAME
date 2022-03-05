@@ -1,7 +1,7 @@
 let botonseleccionadoj1 = '';
 let numberplayer1 = 0;
 
-function dimegamer (miobj,number){
+function tellMeGamer (miobj,number){
     
     let button = miobj;
 
@@ -26,7 +26,7 @@ function dimegamer (miobj,number){
 let botonseleccionadoj2 = '';
 let numberplayer2 = 0;
 
-function dimegamer2 (miobj, number){
+function tellMeGamer2 (miobj, number){
     
     let button = miobj;
     numberplayer2 = number;

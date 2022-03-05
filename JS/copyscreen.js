@@ -111,7 +111,7 @@ function restliveoponent(player, valor){
 const arrayPunch2 = ["../Images/ryu/ryu puñetazo derecha.png","../Images/honda/Honda punetazo derecho.png","../Images/chunLi/Chun puñetazo derecho.png","../Images/ken/ken puño derecha.png"];
 const arraykick2 = ["../Images/ryu/Ryu patada derecha.png","../Images/honda/Honda patada derecho .png","../Images/chunLi/Chun patada derecha.png","../Images/ken/ken patada derecha.png"];
 const arraySpecial2 = ["../Images/ryu/Ryu especial derecha.png","../Images/honda/Honda especial derecho.png","../Images/chunLi/Chun especial derecho.png","../Images/ken/Ken especial derecho.png"];
-const arrayBack2 = ["../Images/ryu/ryu inicio derecha.png","../Images/honda/Honda inicio derecho .png","../Images/chunLi/Chun inicio derecha .png","../Images/ken/ken inicio derecha .png"];
+const arrayBack2 = ["../Images/ryu/ryu inicio derecha.png","../Images/honda/Honda inicio derecho .png","../Images/chunLi/Chun inicio derecha.png","../Images/ken/ken inicio derecha .png"];
 
 
 
