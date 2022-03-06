@@ -6,10 +6,10 @@ let lifeplayer2 = 150;
 
 let timer=400;
 
-const arrayPunch = ["../Images/ryu/ryu puñetazo izquierda.png","../Images/honda/Honda puñetazo izquierdo.png","../Images/chunLi/Chun puñetazo izquierdo.png","../Images/ken/ken.png"];
-const arraykick = ["../Images/ryu/Ryu patada izquierda.png","../Images/honda/Honda patada izquierdo.png","../Images/chunLi/Chun patada izquierda.png","../Images/ken/ken patada izquierda.png"];
-const arraySpecial = ["../Images/ryu/Ryu especial izquierda.png","../Images/honda/Honda especial izquierdo.png","../Images/chunLi/Chun especial izquierdo.png","../Images/ken/Ken especial izquierdo.png"];
-const arrayBack = ["../Images/ryu/ryu inicio izquierda.png","../Images/honda/Honda inicio izquierdo.png","../Images/chunLi/Chun inicio izquierda.png","../Images/ken/ken inicio izquierda.png"];
+const arrayPunch = ["Images/ryu/ryu puñetazo izquierda.png","Images/honda/Honda puñetazo izquierdo.png","Images/chunLi/Chun puñetazo izquierdo.png","Images/ken/ken.png"];
+const arraykick = ["Images/ryu/Ryu patada izquierda.png","Images/honda/Honda patada izquierdo.png","Images/chunLi/Chun patada izquierda.png","Images/ken/ken patada izquierda.png"];
+const arraySpecial = ["Images/ryu/Ryu especial izquierda.png","Images/honda/Honda especial izquierdo.png","Images/chunLi/Chun especial izquierdo.png","Images/ken/Ken especial izquierdo.png"];
+const arrayBack = ["Images/ryu/ryu inicio izquierda.png","Images/honda/Honda inicio izquierdo.png","Images/chunLi/Chun inicio izquierda.png","Images/ken/ken inicio izquierda.png"];
 
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
@@ -110,10 +110,10 @@ const restliveoponent=(player, valor)=>{
 };
     
 
-const arrayPunch2 = ["../Images/ryu/ryu puñetazo derecha.png","../Images/honda/Honda punetazo derecho.png","../Images/chunLi/Chun puñetazo derecho.png","../Images/ken/ken puño derecha.png"];
-const arraykick2 = ["../Images/ryu/Ryu patada derecha.png","../Images/honda/Honda patada derecho .png","../Images/chunLi/Chun patada derecha.png","../Images/ken/ken patada derecha.png"];
-const arraySpecial2 = ["../Images/ryu/Ryu especial derecha.png","../Images/honda/Honda especial derecho.png","../Images/chunLi/Chun especial derecho.png","../Images/ken/Ken especial derecho.png"];
-const arrayBack2 = ["../Images/ryu/ryu inicio derecha.png","../Images/honda/Honda inicio derecho .png","../Images/chunLi/Chun inicio derecha.png","../Images/ken/ken inicio derecha .png"];
+const arrayPunch2 = ["Images/ryu/ryu puñetazo derecha.png","Images/honda/Honda punetazo derecho.png","Images/chunLi/Chun puñetazo derecho.png","Images/ken/ken puño derecha.png"];
+const arraykick2 = ["Images/ryu/Ryu patada derecha.png","Images/honda/Honda patada derecho .png","Images/chunLi/Chun patada derecha.png","Images/ken/ken patada derecha.png"];
+const arraySpecial2 = ["Images/ryu/Ryu especial derecha.png","Images/honda/Honda especial derecho.png","Images/chunLi/Chun especial derecho.png","Images/ken/Ken especial derecho.png"];
+const arrayBack2 = ["Images/ryu/ryu inicio derecha.png","Images/honda/Honda inicio derecho .png","Images/chunLi/Chun inicio derecha.png","Images/ken/ken inicio derecha .png"];
 
 
 
