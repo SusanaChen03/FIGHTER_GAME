@@ -18,17 +18,17 @@ tipeplayer2=Number(params.jugador2);
 
 
 
-function init(){
+const init=()=>{
     document.getElementById("player1").src = arrayBack[tipeplayer1];
     document.getElementById("player2").src = arrayBack2[tipeplayer2];
-}
+};
  
 
 
 let turn = "player1"; //player1, player2
 
 
-function punch(){
+const punch=()=>{
 
     if(turn=="player1"){
     
@@ -40,10 +40,10 @@ function punch(){
         setTimeout (back,timer);
     }
 
-}
+};
    
 
-function back (){ 
+const back =()=>{ 
 
     document.getElementById("player1").src= arrayBack[tipeplayer1];
 
@@ -54,9 +54,9 @@ function back (){
     }
 
     turn ="player2";
-}
+};
 
-function kick (){
+const kick =()=>{
 
     if(turn=="player1"){
     
@@ -68,10 +68,10 @@ function kick (){
 
         setTimeout (back,timer);
     }
-}
+};
     
 
-function especial (){
+const especial =()=>{
 
     if(turn=="player1"){
 
@@ -82,12 +82,12 @@ function especial (){
 
         setTimeout (back,timer);
     }
-}
+};
 
 
 
 
-function restliveoponent(player, valor){
+const restliveoponent=(player, valor)=>{
     
     if (player == "player1"){
         lifeplayer2 = lifeplayer2 - valor;
@@ -107,7 +107,7 @@ function restliveoponent(player, valor){
         }
         document.getElementById("lifeBar1").style="margin-top:-30px;width: " + lifeplayer1 +"px;";
     }
-}
+};
     
 
 const arrayPunch2 = ["../Images/ryu/ryu puñetazo derecha.png","../Images/honda/Honda punetazo derecho.png","../Images/chunLi/Chun puñetazo derecho.png","../Images/ken/ken puño derecha.png"];
@@ -117,21 +117,21 @@ const arrayBack2 = ["../Images/ryu/ryu inicio derecha.png","../Images/honda/Hond
 
 
 
-function punch2(){
+const punch2=()=>{
     if(turn=="player2"){
     
     document.getElementById("player2").src= arrayPunch2[tipeplayer2];
    
-        let valor = 40;
+        let valor = 35;
         restliveoponent("player2", valor);
 
         setTimeout (back2,timer);
     }
     
-}
+};
    
 
-function back2 (){ 
+const back2=()=>{ 
     if(turn=="player2"){
 
     document.getElementById("player2").src= arrayBack2[tipeplayer2];
@@ -143,30 +143,30 @@ function back2 (){
     }
         turn = "player1";
     }   
-}
+};
 
-function kick2 (){
+const kick2=()=>{
     if(turn=="player2"){
 
     document.getElementById("player2").src= arraykick2[tipeplayer2];
     
-    let valor = 50;
+    let valor = 45;
         restliveoponent("player2", valor);
 
         setTimeout (back2,timer);
 }
-}
+};
 
-function especial2 (){
+const especial2=()=>{
     if(turn=="player2"){
 
     document.getElementById("player2").src= arraySpecial2[tipeplayer2];
     
-    let valor = 60;
+    let valor = 55;
         restliveoponent("player2", valor);
 
         setTimeout (back2,timer);
 
 }
 
-}
+};
