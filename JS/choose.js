@@ -47,5 +47,5 @@ function tellMeGamer2 (myObj, number){
 }
 
 startgame = ()=>{
-  window.open('playscreen.html?jugador1='+numberplayer1+'&jugador2='+numberplayer2);
+  window.open('Playscreen.html?jugador1='+numberplayer1+'&jugador2='+numberplayer2,"_self");
 };
