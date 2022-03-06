@@ -1,46 +1,46 @@
-let botonseleccionadoj1 = '';
+let selectedButtonPlayer1 = '';
 let numberplayer1 = 0;
 
-function tellMeGamer (miobj,number){
+function tellMeGamer (myObj,number){
     
-    let button = miobj;
+    let button = myObj;
 
     numberplayer1 = number;
 
-    if(botonseleccionadoj1 !=''){
+    if(selectedButtonPlayer1 !=''){
 
-        let ultimoboton = document.getElementById(botonseleccionadoj1);
-        ultimoboton.classList.remove("selected");
+        let lastButton = document.getElementById(selectedButtonPlayer1);
+        lastButton.classList.remove("selected");
     }
 
-    botonseleccionadoj1=button.id;
+    selectedButtonPlayer1=button.id;
     button.classList.add("selected");
 
-    if (botonseleccionadoj1 !='' && botonseleccionadoj2!=''){
+    if (selectedButtonPlayer1 !='' && selectedButtonPlayer2!=''){
 
         document.getElementById('start').style = 'display:flex';
     }
 }
 
 
-let botonseleccionadoj2 = '';
+let selectedButtonPlayer2 = '';
 let numberplayer2 = 0;
 
-function tellMeGamer2 (miobj, number){
+function tellMeGamer2 (myObj, number){
     
-    let button = miobj;
+    let button = myObj;
     numberplayer2 = number;
 
-    if(botonseleccionadoj2 !=''){
+    if(selectedButtonPlayer2 !=''){
 
-        let ultimoboton = document.getElementById(botonseleccionadoj2);
-        ultimoboton.classList.remove("selected");
+        let lastButton = document.getElementById(selectedButtonPlayer2);
+        lastButton.classList.remove("selected");
     }
 
-    botonseleccionadoj2=button.id;
+    selectedButtonPlayer2=button.id;
     button.classList.add("selected");
 
-    if (botonseleccionadoj1 !='' && botonseleccionadoj2!=''){
+    if (selectedButtonPlayer1 !='' && selectedButtonPlayer2!=''){
 
         document.getElementById('start').style = 'display:flex';
     }

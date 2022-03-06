@@ -80,3 +80,10 @@ a:link{
 a:hover{
     color:red;
 }
+
+button{
+    font-weight: bold;
+    border: 2px solid grey;
+    background-color: rgb(241, 146, 162);
+    height: 40px;
+}
