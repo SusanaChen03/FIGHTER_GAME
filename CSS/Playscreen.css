@@ -51,7 +51,6 @@ header{
     display: flex;
     justify-content: center;
     width: 50%;
-    
 }
 
 .imageplayer{
@@ -73,10 +72,12 @@ header{
     font-size: 25px;
     font-weight: bold;
 }
+
 a:link{
     text-decoration: none;
     color:red;
 }
+
 a:hover{
     color:red;
 }

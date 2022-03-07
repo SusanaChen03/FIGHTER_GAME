@@ -30,10 +30,18 @@ El Stack tecnológico de este juego han sido:
 
 ![imagen](Images/readmeimages/html5css3js.png)
 
-Contribuyendo 👀️
 
----
+Click aquí abajo para comenzar a jugar:
 
-Por favor lee el CONTRIBUYING.md para detalles de mi código de conducta, y el proceso para enviarme pull requests.
+#### [[https://susanachen03.github.io/FIGHTER_GAME/](https://susanachen03.github.io/FIGHTER_GAME/)](https://)
+
+
+
+
+Después de jugar si tienes alguna duda o sugerencia puedes mandarme por mail o por una pull request, todas serán bienvenidas:
+
+[grupochen@hotmail.com](https://)
+
+Si alguien quiere mandar alguna recomendación o  una request, siempre esta bienvenido
 
 Hecho con mucho ❤️ por SusanaChen 😄
