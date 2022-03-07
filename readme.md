@@ -30,13 +30,9 @@ El Stack tecnológico de este juego han sido:
 
 ![imagen](Images/readmeimages/html5css3js.png)
 
-
 Click aquí abajo para comenzar a jugar:
 
-#### [[https://susanachen03.github.io/FIGHTER_GAME/](https://susanachen03.github.io/FIGHTER_GAME/)](https://)
-
-
-
+#### [[https://susanachen03.github.io/Fighter_Game/](https://susanachen03.github.io/Figher_Game/)](https://)
 
 Después de jugar si tienes alguna duda o sugerencia puedes mandarme por mail o por una pull request, todas serán bienvenidas:
 
