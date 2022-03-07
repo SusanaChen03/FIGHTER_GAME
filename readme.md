@@ -32,7 +32,7 @@ El Stack tecnológico de este juego han sido:
 
 Click aquí abajo para comenzar a jugar:
 
-#### [[https://susanachen03.github.io/Fighter_Game/](https://susanachen03.github.io/Figher_Game/)](https://)
+#### [[https://susanachen03.github.io/Fighter_Game/](https://susanachen03.github.io/Fighter_Game/)](https://)
 
 Después de jugar si tienes alguna duda o sugerencia puedes mandarme por mail o por una pull request, todas serán bienvenidas:
 
@@ -40,4 +40,4 @@ Después de jugar si tienes alguna duda o sugerencia puedes mandarme por mail o 
 
 Si alguien quiere mandar alguna recomendación o  una request, siempre esta bienvenido
 
-Hecho con mucho ❤️ por SusanaChen 😄
+Hecho con mucho ❤️ por SusanaChen 😄.
