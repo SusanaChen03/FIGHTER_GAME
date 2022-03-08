@@ -6,7 +6,6 @@ body{
     background-repeat: no-repeat;
 }
 
-
 .start{
     display: flex;
     justify-content: center;
@@ -22,7 +21,7 @@ a{
 
 a:link{
     text-decoration: none;
-    color: rgb(236, 42, 74);
+    color: green;
 }
 
 a:hover{

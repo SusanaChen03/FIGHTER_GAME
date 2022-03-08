@@ -4,7 +4,6 @@ let numberplayer1 = 0;
 function tellMeGamer (myObj,number){
     
     let button = myObj;
-
     numberplayer1 = number;
 
     if(selectedButtonPlayer1 !=''){
